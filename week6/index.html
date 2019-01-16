@@ -1,0 +1,64 @@
+<!--
+* @title    index.html
+*
+* @desc     This file is the skeleton HTML page for the script.js file. 
+*
+* @author   Marc Tibbs (933270515)
+* @email    tibbsm@oregonstate.edu
+* @class    CS290 - 400 - Winter 2018
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+  </head>
+
+  <body>
+    <form>
+	    <fieldset>
+	        <legend>GET Weather:</legend>
+	        	<br />
+		        <label>Enter City Name or Zipcode:
+		            <input type="text" name="locationIn" id="locationIn" size="30" maxlength="100">
+		        </label>
+		        <br /><br />
+		        <input type="submit" value="Submit City Name" id="urlSubmit">
+		        <input type="submit" value="Submit Zipcode" id="urlSubmitZip">
+		        <br />
+		        
+	    </fieldset>
+	</form>
+	<br />
+	<div>
+
+		<h2><span id="cityName"></span><br /></h2>
+		<span id="temp"></span><br />
+		<span id="wind"></span><br />	
+		<span id="hum"></span><br />		
+	</div>
+	<br /><br />
+	
+	<form>
+    <fieldset>
+        <legend>POST:</legend>
+        
+	        <label>Text here:
+	            <input type="text" name="text_input" size="30" maxlength="100" id="postInfo">
+	        </label>
+        	<br /><br />
+        
+        	<input type="submit" value="Submit" id="pSubmit">
+        </fieldset>
+        
+    </fieldset>
+	</form>
+	<br />
+	<div>
+		<span id="postOut"></span><br />
+	</div>
+
+    <script src="script.js"></script>
+  </body>
+
+</html>

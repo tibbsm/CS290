@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage[margin=1.25in]{geometry}
+\usepackage{pdfpages}
+
+\title{CS290 (Winter 2018) - Week 8 Activities}
+\author{Marc Tibbs (tibbsm@oregonstate.edu)}
+\date{Due Date: March 4, 2018}
+
+\begin{document}
+
+\maketitle
+
+\section*{Deliverables:}
+
+Submit a PDF. In that PDF discuss in 2 or 3 paragraphs what you had the most difficulty with, what problems it was giving you and what steps you took to fix it. Also briefly describe how you checked your understanding of the above listed topics. What type of things did you do? What services did you use?\\[.15cm]
+
+I was able to get through all the activities without any difficulty. While I doubt I would be able to implement all of things I learned from this module without outside resources yet. Given some time and practice I think that I should be able to implement them without any trouble. I made sure to do each activity listed in each section and was able to implement them all with some help from the lectures. I've also included a log of my notes I took while going through this week's module down below. 
+
+\section*{Intro to Sessions}
+I found this activity straight forward and easy to accomplish. I followed the instructions given in the lecture and was able to setup the pag using session pretty easily. While the instructions were straight forward I am not exactly sure I would be able to implement this code without the help of the lecture or other resources. The idea of sessions make sense to me, but implementing it will take some practice before I can do it without any help. I got this page up and running using node and tested it on my localhost. I compared my code with the instructor's code and github and found them to be similar. When I tested the instructor's code I got an error prompt, ``TypeError: Cannot set property 'count' of undefined'', when trying to reset the count. I looked into the code and noticed that the req.session.destroy() command was causing this error. Once I switched it back to req.session.count = 0 the error went away. 
+
+\section*{Session Example}
+Again, the activity for this section was easy enough to follow along with and I did not run into any trouble getting the page with the to do list up and running. I know I would not be able to implement this at the moment without the help of outside resources, but with some practice I think I will be able to get these types of pages up and running without too much effort. I got this page up and running using node and tested it on my localhost. 
+
+\section*{HTML Requests with Node and Express}
+I was able to follow along and complete this activity as well. Things are getting quite complicated though and I had to refer back to the lectures to ensure that I was getting all the code written correctly. At the same time setting things up are starting to get easier with practice. I set up my page so that is made two consequtive calls to OpenWeatherMap and returned the weather for Corvallis and Tokyo on the page. 
+
+\section*{Keeping Things Organized}
+This section really tied it all togeter for me. I was a littl confused as to why the functions in the lectures were getting overly complicated. Thankfully, organizing the function really makes things more readable and easier to understand. 
+
+\end{document}

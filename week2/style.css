@@ -1,0 +1,58 @@
+body {
+    margin: 10px;
+    padding: 10px;
+}
+table{
+    border: 1px solid black;
+}
+th, td{
+    border: 1px solid black;
+}
+ul {
+    list-style:none;
+    padding:0
+}
+ol{
+    list-style:none;
+}
+/*'outer-content'
+ o aligned to the left side of the page 
+ o takes up 3/4 of the page width
+ o has a space of 20px btwn it & the previous element 
+ o background should be pink*/
+.outercontent{
+    background-color: pink;
+    width: 75%;
+    margin-top: 20px;
+    padding:15px;
+}
+/*'inner-content'
+ o background should be blue 
+ o 3/4 of the parent divs width and centered.*/
+.innercontent{
+    background-color: lightblue;
+    position: relative;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+}
+
+tbody tr:nth-child(even){
+    background-color: lightblue;
+}
+
+tbody tr{
+    background-color: lightgreen;
+}
+
+tbody tr td:nth-child(2){
+    color: red;
+}
+
+tbody tr td:nth-child(4){
+    color: blue;
+}
+
+th i{
+    font-weight:normal;
+}
